@@ -46,7 +46,7 @@ export function LoginForm() {
       onSuccess: () => {
         setFormState(defaultState);
         queryClient.invalidateQueries({ queryKey: authKeys.currentUser() });
-        router.push('/auth/dashboard');
+        router.push('/dashboard');
       },
     });
   };
