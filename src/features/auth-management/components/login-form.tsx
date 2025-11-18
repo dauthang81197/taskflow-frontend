@@ -47,7 +47,7 @@ export function LoginForm() {
                 setFormState(defaultState);
 
                 queryClient.invalidateQueries({queryKey: authKeys.currentUser()});
-                router.push('/dashboard');
+                router.push('/home');
             },
         });
     };
